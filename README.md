@@ -1,18 +1,18 @@
 CurvedCornersCAD is a tiny, zero‑dependency Android Java library that lets you round the corners of any View in a single static call. It uses only Android’s built‑in GradientDrawable, so there’s no extra view wrapping, no reflection, and no impact on performance.
 
-    Size: ~100 lines of code
+Size: ~100 lines of code
 
-    Features:
+Features:
 
-        Uniform corner radius or fully individualized top‑left, top‑right, bottom‑right, bottom‑left radii
+Uniform corner radius or fully individualized top‑left, top‑right, bottom‑right, bottom‑left radii
 
-        Custom background color
+Custom background color
 
-        Optional stroke (width + color)
+Optional stroke (width + color)
 
-        Automatic dp → px conversion
+Automatic dp → px conversion
 
-        Works on all API levels supported by Android’s GradientDrawable
+Works on all API levels supported by Android’s GradientDrawable
 
 Add to Your Project
 
@@ -34,6 +34,8 @@ Then add the dependency:
 Quick Usage
 
 Import and call in one line:
+```java
+    
     
     // 1) Uniform 16dp radius, blue background
     CurvedCornersCAD.apply(myView, 16f, Color.BLUE);
@@ -52,5 +54,5 @@ Import and call in one line:
         0,    // stroke width = 0 (no stroke)
         0     // stroke color (ignored)
     );
-
+```
 With CurvedCornersCAD, you get full corner‑control in one simple call—no boilerplate, no custom views, and rock‑solid performance.
